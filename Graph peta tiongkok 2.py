@@ -98,3 +98,47 @@ class Peta:
                 print(f'-> {kota} {jarak}Km')
 
 SiChuan_Province = ["Garze Tibetan","Liangshan Yi","Panzhihua","Yaan","Meishan","Leshan","Chengdu","Deyang","Dazhou","Nanchong","Guang'an","Suining","Ziyang","Neijiang","Zigong","Yibin","Luzhou"]
+
+#Testzone
+PetaTiongkok = Peta()
+#Tambah Kota
+for kota in SiChuan_Province:
+    PetaTiongkok.tambahkota(kota)
+#Hitung Kota
+PetaTiongkok.hitungkota()
+#Tambah Jalan
+PetaTiongkok.tambahJalan("Garze Tibetan","Yaan",132)
+PetaTiongkok.tambahJalan("Liangshan Yi","Panzhihua",215)
+PetaTiongkok.tambahJalan("Liangshan Yi","Yaan",310)
+PetaTiongkok.tambahJalan("Yaan","Chengdu",132)
+PetaTiongkok.tambahJalan("Yaan","Meishan",103)
+PetaTiongkok.tambahJalan("Yaan","Leshan",111)
+PetaTiongkok.tambahJalan("Meishan","Chengdu",72)
+PetaTiongkok.tambahJalan("Meishan","Ziyang",114)
+PetaTiongkok.tambahJalan("Meishan","Yaan",103)
+PetaTiongkok.tambahJalan("Meishan","Leshan",76)
+PetaTiongkok.tambahJalan("Leshan","Ziyang",141)
+PetaTiongkok.tambahJalan("Leshan","Zigong",126)
+PetaTiongkok.tambahJalan("Leshan","Yibin",162)
+PetaTiongkok.tambahJalan("Chengdu","Deyang",84)
+PetaTiongkok.tambahJalan("Chengdu","Suining",169)
+PetaTiongkok.tambahJalan("Chengdu","Ziyang",101)
+PetaTiongkok.tambahJalan("Deyang","Dazhou",421)
+PetaTiongkok.tambahJalan("Deyang","Nanchong",220)
+PetaTiongkok.tambahJalan("Dazhou","Guang'an",199)
+PetaTiongkok.tambahJalan("Dazhou","Suining",168)
+PetaTiongkok.tambahJalan("Nanchong","Guang'an",199)
+PetaTiongkok.tambahJalan("Nanchong","Suining",76)
+PetaTiongkok.tambahJalan("Guang'an","Suining",121)
+PetaTiongkok.tambahJalan("Suining","Neijiang",145)
+PetaTiongkok.tambahJalan("Suining","Ziyang",139)
+PetaTiongkok.tambahJalan("Ziyang","Neijiang",93)
+PetaTiongkok.tambahJalan("Neijiang","Zigong",45)
+PetaTiongkok.tambahJalan("Neijiang","Luzhou",102)
+PetaTiongkok.tambahJalan("Zigong","Luzhou",95)
+PetaTiongkok.tambahJalan("Zigong","Yibin",81)
+PetaTiongkok.tambahJalan("Yibin","Luzhou",121)
+#Print Peta
+PetaTiongkok.printpeta()
+#Jarak antara sebuah kota ke seluruh kota
+PetaTiongkok.jarakseluruhkota("Yibin")
